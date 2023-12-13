@@ -14,7 +14,7 @@ namespace BookMania.Models
         public string Type { get; set; }
         public string Genre { get; set; }
         public float Price { get; set; }
+        [Range(0, 10)]
         public float Rating { get; set; }
-        public string ImageURL { get; set; }
     }
 }

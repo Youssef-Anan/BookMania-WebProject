@@ -13,6 +13,9 @@
     <thead>
         <tr>
             <th>
+                Image
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
@@ -36,6 +39,14 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @if(item.Type=="Novel"){
+                    <img src="uploads/bookcover.jpeg"  width="50" height="60">
+                }
+                else{
+                    <img src="uploads/comiccover.jpg"  width="50" height="60">
+                }
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Title)
             </td>

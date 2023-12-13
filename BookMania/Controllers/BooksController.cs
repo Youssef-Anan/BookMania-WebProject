@@ -58,11 +58,6 @@ namespace BookMania.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (book.CoverPhoto != null)
-                {
-                    string folder = "/books/cover";
-                    
-                }
                 _context.Add(book);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

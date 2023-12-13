@@ -52,9 +52,6 @@ namespace BookMania.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("test")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Book");
