@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BookMania.Models;
 
 namespace BookMania.Data
 {
@@ -9,5 +10,6 @@ namespace BookMania.Data
             : base(options)
         {
         }
+        public DbSet<BookMania.Models.Book> Book { get; set; } = default!;
     }
 }
