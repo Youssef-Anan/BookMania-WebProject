@@ -9,6 +9,41 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@foreach (var item in Model)
+{
+
+<table class="col-md-6 col-lg-4 form-container p-4 mt-5 me-1">
+<div class="row">
+    <div class="col-3">
+                @if (item.Type == "Novel")
+                {
+                    <img src="uploads/bookcover.jpeg" width="130" height="170">
+                }
+                else
+                {
+                    <img src="uploads/comiccover.jpg" width="100" height="140">
+                }
+    </div>
+            <h5>
+                <a asp-action="Details" asp-route-id="@item.Id" style="color: black;">@Html.DisplayFor(modelItem => item.Title)</a>
+            </h5>
+        <small>@Html.DisplayFor(modelItem => item.Author_Name)</small>
+        @* <p>@Html.DisplayFor(modelItem => item.Type)</p>*@
+        @*  <p>@Html.DisplayFor(modelItem => item.Genre)</p> *@
+            <h6>@Html.DisplayFor(modelItem => item.Price)$</h6>
+            <h6> @Html.DisplayFor(modelItem => item.Rating)/10</h6>
+            <p>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </p>
+        <pp>
+    </div>
+</table>
+}
+    
+@* 
 <table class="table">
     <thead>
         <tr>
@@ -75,3 +110,4 @@
 }
     </tbody>
 </table>
+ *@
