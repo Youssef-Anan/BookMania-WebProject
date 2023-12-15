@@ -6,8 +6,9 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<div class="container">
-    <div class="col-md-4">
+
+    <div class="row">
+    <div class="col-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h2>Create a new account.</h2>
             <hr />
@@ -35,14 +36,14 @@
             </div>
             
         </form>
-    </div>
-    <div class="col-md-8">
+        </div>
+        <div class="col-8">
 
             <div class="form_gif">
-                <img src="/uploads/Book_Gif.gif" alt="Computer man">
+                <img src="/uploads/Book_Gif.gif" alt="Computer man" width="800" height="800">
             </div>
+        </div>
     </div>
-</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
