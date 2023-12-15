@@ -4,47 +4,47 @@
     ViewData["Title"] = "Register";
 }
 
-<style>
-    .btn-Brown {
-        background-color: #8B4513;
-        border-color: #8B4513;
-        color: #fff;
-    }
-</style>
-
 <h1>@ViewData["Title"]</h1>
 
-<div class="row center-content">
-    <div class="col-md-4">
+
+    <div class="row">
+    <div class="col-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h2>Create a new account.</h2>
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <input asp-for="Input.Email" class="form-control circular" autocomplete="username" aria-required="true" placeholder="name@example.com" />
                 <label asp-for="Input.Email">Email</label>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.Password" class="form-control  circular" autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.Password">Password</label>
                 <span asp-validation-for="Input.Password" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <input asp-for="Input.ConfirmPassword" class="form-control circular " autocomplete="new-password" aria-required="true" placeholder="password" />
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-Brown">Register</button>
             <div>
                 <p>
-                    <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" style="color: #423726;">Already Have Account?</a>
+                    <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" style="color: rosybrown;">Already Have Account?</a>
                 </p>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-Brown">Register</button>
-
+            
         </form>
+        </div>
+        <div class="col-8">
+
+            <div class="form_gif">
+                <img src="/uploads/Book_Gif.gif" alt="Computer man" width="800" height="800">
+            </div>
+        </div>
     </div>
-    
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
