@@ -6,55 +6,99 @@
 
 <h1>Details</h1>
 
-<div>
+<div class="container">
     <h4>Book</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class = "col-sm-10">
+
+    <div class="row">
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Title)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Author_Name)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Author_Name)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Author_Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Type)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Type)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Genre)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Genre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Price)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-        <dd class = "col-sm-10">
+        </div>
+
+        <div class="col-md-2">
+            <strong>@Html.DisplayNameFor(model => model.Rating)</strong>
+        </div>
+        <div class="col-md-10">
             @Html.DisplayFor(model => model.Rating)
-        </dd>
-    </dl>
+        </div>
+
+        <div class="col-md-2">
+            <strong>Cover Image</strong>
+        </div>
+        <div class="col-md-10">
+            @if (Model.Type == "Novel")
+            {
+                <img src="~/uploads/bookcover.jpeg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Comics")
+            {
+                <img src="~/uploads/comiccover.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Educational")
+            {
+                <img src="~/uploads/educational.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Historical")
+            {
+                <img src="uploads/historical.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Scientific")
+            {
+                <img src="uploads/scientific.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Geography")
+            {
+                <img src="uploads/geography.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Autobiography")
+            {
+                <img src="uploads/autobiography.jpg" alt="Book Cover" height="200" width="150">
+            }
+            else if (Model.Type == "Documentational")
+            {
+                <img src="uploads/documentational.jpg" alt="Book Cover" height="200" width="150">
+            }
+        </div>
+    </div>
 </div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
     <a asp-action="Delete" asp-route-id="@Model?.Id">Delete</a> |
+    <a asp-action="Index">Back to List</a>
 </div>
-  
-        {
+
+        
 
 @* <figure>
     @if (@item.Type == "Novel")

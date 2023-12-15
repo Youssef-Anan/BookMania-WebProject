@@ -203,22 +203,23 @@ footer {
     color: #423726;
     transition: transform 0.3s ease-in-out;
 }
-.custombook:hover {
-    transform: scale(1.5);
-    color:red;
-}
+    .custombook:hover {
+        transform: scale(18);
+        color: #f3d2a1;
+    }
 .sidebar-box {
     background-color: #f3d2a1;
-    border-radius: 30px;
+    border-radius: 20px;
     font-family: cursive;
     color: #423726;
-    padding-left:20px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .book-block:hover{
     color:white;
 }
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
 
 .btn-Brown {
     border-radius: 20px;
