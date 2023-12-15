@@ -54,11 +54,10 @@ namespace BookMania.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserMail,Description,Type")] Inquiry inquiry)
+        public async Task<IActionResult> Create([Bind("Id,PhoneNumber,UserMail,Description,Type")] Inquiry inquiry)
         {
             if (ModelState.IsValid)
             {
-                
                 _context.Add(inquiry);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -87,7 +86,7 @@ namespace BookMania.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserMail,Description,Date")] Inquiry inquiry)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,PhoneNumber,UserMail,Description,Type")] Inquiry inquiry)
         {
             if (id != inquiry.Id)
             {

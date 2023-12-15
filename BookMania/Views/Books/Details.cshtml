@@ -51,4 +51,26 @@
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
+    <a asp-action="Delete" asp-route-id="@Model?.Id">Delete</a> |
 </div>
+  
+        {
+
+@* <figure>
+    @if (@item.Type == "Novel")
+    {
+        <img src="uploads/bookcover.jpeg" alt="Book Cover" style="height: 200px; object-fit: cover;">
+    }
+    else if (item.Type == "Comics")
+    {
+        <img src="uploads/comiccover.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;">
+    }
+    else if (item.Type == "Educational")
+    {
+        <img src="uploads/educational.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;" />
+    }
+    else if (item.Type == "Historical")
+    {
+        <img src="uploads/historical.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;" />
+    }
+</figure> *@
