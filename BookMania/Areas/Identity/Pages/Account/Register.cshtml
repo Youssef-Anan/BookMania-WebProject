@@ -12,7 +12,9 @@
         border-radius: 20px;
     }
 
-
+    a {
+        color: rosybrown;
+    }
     .form-control.circular {
         border-radius: 20px; 
         border-color:brown;
@@ -43,12 +45,12 @@
                 <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-Brown">Register</button>
             <div>
                 <p>
-                    <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" style="color: #423726;">Already Have Account?</a>
+                    <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" style="color: rosybrown;">Already Have Account?</a>
                 </p>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-Brown">Register</button>
 
         </form>
     </div>
