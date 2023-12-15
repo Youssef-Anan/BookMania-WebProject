@@ -19,7 +19,8 @@
 <div class="row">
     <!-- Sidebar -->
     <div class="col-md-3 sidebar">
-        <h2>Book type</h2>
+        <div class="sidebar-box">
+        <h2>Book type </h2>
         <!-- Sidebar Buttons for Different Types -->
         <div class="form-check mb-2">
             <input class="form-check-input type-checkbox" type="checkbox" id="showAllCheckbox" data-type="all">
@@ -60,6 +61,7 @@
             </label>
         </div>
     </div>
+    </div>
 
     <!-- Main Content -->
     <div class="col-md-9 content">
@@ -70,25 +72,26 @@
 
         @foreach (var item in Model)
         {
+          
             <a asp-action="Details" asp-route-id="@item.Id" class="custombook" data-type="@item.Type">
                 <div class="m-2" style="display: inline-block;">
-                    <h6>@Html.DisplayFor(modelItem => item.Type)</h6>
+                    <h6>@Html.DisplayFor(modelItem => item.Genre)</h6>
                     <figure>
                         @if (item.Type == "Novel")
                         {
-                            <img src="uploads/bookcover.jpeg" alt="Book Cover" style="height: 200px; object-fit: cover;">
+                            <img src="uploads/bookcover.jpeg" alt="Book Cover" height="200" width="150">
                         }
                         else if(item.Type=="Comics")
                         {
-                            <img src="uploads/comiccover.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;">
+                            <img src="uploads/comiccover.jpg" alt="Book Cover" height="200" width="150">
                         }
                         else if (item.Type == "Educational")
                         {
-                            <img src="uploads/educational.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;" />
+                            <img src="uploads/educational.jpg" alt="Book Cover" height="200" width="150">
                         }
                         else if (item.Type == "Historical")
                         {
-                            <img src="uploads/historical.jpg" alt="Book Cover" style="height: 200px; object-fit: cover;" />
+                            <img src="uploads/historical.jpg" alt="Book Cover" height="200" width="150">
                         }
                     </figure>
                     <div>
@@ -96,10 +99,13 @@
                         <small>@Html.DisplayFor(modelItem => item.Author_Name)</small>
                         <h6>@Html.DisplayFor(modelItem => item.Price)$</h6>
                         <h6>@Html.DisplayFor(modelItem => item.Rating)/10</h6>
+                       
+                    
                         
                     </div>
                 </div>
             </a>
+            
         }
     </div>
 </div>
