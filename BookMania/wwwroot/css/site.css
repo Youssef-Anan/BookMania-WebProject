@@ -4,12 +4,8 @@ html {
 
     html * {
         font-family: cursive;
+        color: #423726;
     }
-
-h1 * {
-    font-family: cursive;
-    color: #423726;
-}
 
 @media (min-width: 768px) {
     html {
