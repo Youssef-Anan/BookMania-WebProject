@@ -47,13 +47,14 @@ footer {
 
 .fh5co-card-item {
     display: block;
-    width: 100%;
+    width: 300px;
+    height:300px;
     position: relative;
     background: #f3d2a1;
     overflow: hidden;
     z-index: 9;
     bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
     -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
@@ -70,7 +71,7 @@ footer {
 }
 
     .fh5co-card-item figure {
-        height: 240px;
+        height: 200px;
         overflow: hidden;
         z-index: 12;
         position: relative;
