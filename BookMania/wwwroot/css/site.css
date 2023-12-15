@@ -188,3 +188,9 @@ body {
         .fh5co-card-item:hover h2, .fh5co-card-item:hover span, .fh5co-card-item:focus h2, .fh5co-card-item:focus span {
             text-decoration: none !important;
         }
+
+
+.custombook {
+    text-decoration: none;
+    color: black;
+}
