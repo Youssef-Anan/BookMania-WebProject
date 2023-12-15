@@ -1,13 +1,20 @@
 html {
     font-size: 14px;
 }
-html * {
+
+    html * {
+        font-family: cursive;
+    }
+
+h1 * {
     font-family: cursive;
+    color: #423726;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -15,19 +22,19 @@ html * {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
     margin-bottom: 60px;
     background-color: #fff2de;
 }
+
 footer {
     background-color: #f3d2a1;
     font-family: cursive;
     color: #423726;
-    
 }
 
 .navbar {
@@ -35,189 +42,105 @@ footer {
     border-radius: 30px;
 }
 
-.navbar .navbar-brand,
-.navbar .nav-link,
-.nav-navbar .nav-link {
-        font-family:cursive;
+    .navbar .navbar-brand,
+    .navbar .nav-link,
+    .nav-navbar .nav-link {
+        font-family: cursive;
         color: #423726;
     }
+
 .navbar-brand:hover, .nav-link:hover {
     font-size: 120%;
 }
 
-.fh5co-card-item {
+.carousel-width{
+    align-items:center;
+    width:300px;
+}
+
+.writer-card-item {
     display: block;
-    width: 300px;
-    height:300px;
+    width: 100%;
     position: relative;
     background: #f3d2a1;
     overflow: hidden;
-    z-index: 9;
-    bottom: 0;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    -ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
+    margin-bottom: 30px;
     border-radius: 20px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
-    text-decoration: none
+    text-decoration: none;
+    transform: scale(0.9);
 }
 
-    .fh5co-card-item figure {
-        height: 200px;
+    .writer-card-item figure {
+        height: 240px;
         overflow: hidden;
-        z-index: 12;
         position: relative;
     }
 
-        .fh5co-card-item figure .overlay {
-            opacity: 0;
-            visibility: hidden;
-            z-index: 10;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.4);
-            -webkit-transition: 0.7s;
-            -o-transition: 0.7s;
-            transition: 0.7s;
-        }
-
-            .fh5co-card-item figure .overlay i {
-                z-index: 12;
-                color: #fff;
-                font-size: 30px;
-                position: absolute;
-                margin-left: -15px;
-                margin-top: -45px;
-                top: 50%;
-                left: 50%;
-                -webkit-transition: 0.3s;
-                -o-transition: 0.3s;
-                transition: 0.3s;
-            }
-
-    .fh5co-card-item img {
-        
-        z-index: 8;
-        opacity: 1;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
+    .writer-card-item img {
         transition: 0.3s;
-        
     }
 
-    .fh5co-card-item .fh5co-text {
+    .writer-card-item .writer-text {
         padding: 0px 10px 10px 20px;
         text-align: center;
     }
 
-        .fh5co-card-item .fh5co-text h2, .fh5co-card-item .fh5co-text span {
+        .writer-card-item .writer-text h2, .writer-card-item .writer-text span {
             text-decoration: none !important;
         }
 
-        .fh5co-card-item .fh5co-text h2 {
+        .writer-card-item .writer-text h2 {
             font-size: 20px;
             font-weight: 400;
             margin: 0 0 10px 0;
             color: #423726;
         }
 
-        .fh5co-card-item .fh5co-text span {
+        .writer-card-item .writer-text span {
             color: #423726;
             font-size: 16px;
             font-weight: 400;
         }
 
-        .fh5co-card-item .fh5co-text p {
+        .writer-card-item .writer-text p {
             color: #423726;
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
             transition: 0.5s;
         }
 
-        .fh5co-card-item .fh5co-text span.btn {
-            color: #fff !important;
-            opacity: 1;
-            visibility: visible;
-            bottom: 0;
-            background: #1a1a1a;
-            border: 2px solid #1a1a1a !important;
-            position: relative;
-            -webkit-transition: 0.5s;
-            -o-transition: 0.5s;
-            transition: 0.5s;
-        }
-
-    .fh5co-card-item:hover, .fh5co-card-item:focus {
+    .writer-card-item:hover, .writer-card-item:focus {
         bottom: 7px;
         text-decoration: none;
-        -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-        -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-        -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
-        -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
         box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
     }
 
-    .fh5co-card-item:hover img, .fh5co-card-item:focus img {
-            -webkot-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
+        .writer-card-item:hover img, .writer-card-item:focus img {
             transform: scale(1.2);
-    }
-
-        .fh5co-card-item:hover span.btn, .fh5co-card-item:focus span.btn {
-            opacity: 1;
-            visibility: visible;
-            bottom: 0px;
-            border: 2px solid #0adec0 !important;
-            background: #0adec0 !important;
         }
-
-        .fh5co-card-item:hover figure .overlay, .fh5co-card-item:focus figure .overlay {
-            opacity: 1;
-            visibility: visible;
-        }
-
-            .fh5co-card-item:hover figure .overlay i, .fh5co-card-item:focus figure .overlay i {
-                margin-top: -15px;
-            }
-
-        .fh5co-card-item:hover h2, .fh5co-card-item:hover span, .fh5co-card-item:focus h2, .fh5co-card-item:focus span {
-            text-decoration: none !important;
-        }
-
 /**/
 .custombook {
     text-decoration: none;
     color: #423726;
     transition: transform 0.3s ease-in-out;
 }
+
     .custombook:hover {
         transform: scale(18);
         color: #f3d2a1;
     }
+
 .sidebar-box {
     background-color: #f3d2a1;
     border-radius: 20px;
     font-family: cursive;
     color: #423726;
-    padding-left:10px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.book-block:hover{
-    color:white;
+
+.book-block:hover {
+    color: white;
 }
 /*----------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -226,14 +149,14 @@ footer {
     background-color: #f3d2a1;
     border-color: #875c1a;
     color: #423726;
+}
 
-}
-.btn-Brown:hover {
-    background-color: #875c1a;
-    border-color: #875c1a;
-    color: white;
-    border-radius: 20px;
-}
+    .btn-Brown:hover {
+        background-color: #875c1a;
+        border-color: #875c1a;
+        color: white;
+        border-radius: 20px;
+    }
 
 /*////////////////////////////////////
 */
@@ -367,23 +290,24 @@ footer {
 
     .about-content .read-more {
         background-color: #f3d2a1;
-    border-color: #875c1a;
-    color: #423726;
-    border-radius: 20px;
+        border-color: #875c1a;
+        color: #423726;
+        border-radius: 20px;
     }
 }
 
-    .btn-Brown:hover {
-        border-radius: 20px;
-        background-color: #875c1a;
-        border-color: #875c1a;
-        color: white;
-        
-    }
-      .form-control {
-        border-radius: 20px;
-        border-color: brown;
-    }
+.btn-Brown:hover {
+    border-radius: 20px;
+    background-color: #875c1a;
+    border-color: #875c1a;
+    color: white;
+}
+
+.form-control {
+    border-radius: 20px;
+    border-color: brown;
+}
+
 .form_gif {
     width: 500px;
     height: 500px;
@@ -391,5 +315,3 @@ footer {
     margin-right: 0;
     display: block; /* Ensures the image is treated as a block element */
 }
-   
-

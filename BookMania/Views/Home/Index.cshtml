@@ -2,6 +2,14 @@
 	ViewData["Title"] = "Home Page";
 }
 
+<center>
+
+<video controls autoplay muted loop width="800">
+	<source src="~/uploads/covers/covervid.mp4">
+	Your browser does not support the video tag.
+</video>
+
+<div class="carousel-width">
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<ol class="carousel-indicators">
@@ -9,15 +17,16 @@
 			<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
 			<li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
 		</ol>
+		<h2>Trending Books</h2>
 		<div class="carousel-inner">
 			<div class="carousel-item">
-				<img class="d-block w-100" src="~/uploads/panel/test1.jpeg" alt="First slide">
+				<img class="d-block w-100" src="/uploads/covers/greatgatsby.jpg" alt="First slide" height="350">
 			</div>
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="/uploads/panel/test2.jpeg" alt="Second slide">
+				<img class="d-block w-100" src="/uploads/covers/harrypoter.jpg" alt="Second slide" height="350">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="..." alt="Third slide">
+				<img class="d-block w-100" src="/uploads/covers/witches.jpg" alt="Third slide" height="350">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -30,16 +39,18 @@
 		</a>
 	</div>
 </div>
+</div>
+</center>
+<h1 style="text-align:center;color: #423726;">Writers Hall of Fame</h1>
 <div class="text-center">
-	<h3 class="display-4">Writers Hall of Fame</h3>
 	<div class="row">
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/William_Shakespeare" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/William_Shakespeare" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/WilliamShakespeer.jpg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>Williams Shakespeer</h2>
 					<p>William Shakespeare was an English playwright, poet and actor. He is widely regarded as the greatest writer in the English language and the world's pre-eminent dramatist.</p>
 
@@ -47,12 +58,12 @@
 			</a>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/George_Orwell" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/George_Orwell" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/GeorgeOrwell.jpg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>George Orwell</h2>
 					<p>English novelist, essayist, journalist, and critic. His work is characterised by lucid prose, social criticism, opposition to totalitarianism, and support of democratic socialism.</p>
 
@@ -61,12 +72,12 @@
 		</div>
 
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/Homer" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/Homer" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/Homer.jpeg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>Homer</h2>
 					<p>Homer was a Greek poet who is credited as the author of the Iliad and the Odyssey Homer is considered one of the most revered and influential authors in history.</p>
 
@@ -74,12 +85,12 @@
 			</a>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/Charles_Dickens" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/Charles_Dickens" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/CharlesDickens.jpeg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>Charles Dickens</h2>
 					<p>Charles Dickens was born in 1812 and died in 1870. He wrote classic novels of the Victorian era like Great Expectations, David Copperfield, Oliver Twist and A Christmas Carol.</p>
 
@@ -87,12 +98,12 @@
 			</a>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/Fyodor_Dostoevsky" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/Fyodor_Dostoevsky" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/FyodorDostoyevsky.jpeg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>Fyodor Dostoyevsky</h2>
 					<p>Dostoyevsky, was a Russian novelist, short story writer, essayist and journalist. Numerous literary critics regard him as one of the greatest novelists in all of world literature.</p>
 
@@ -103,12 +114,12 @@
 
 
 		<div class="col-lg-4 col-md-4 col-sm-6">
-			<a href="https://en.wikipedia.org/wiki/Leo_Tolstoy" class="fh5co-card-item image-popup">
+			<a href="https://en.wikipedia.org/wiki/Leo_Tolstoy" class="writer-card-item image-popup">
 				<figure>
 					<div class="overlay"><i class="ti-plus"></i></div>
 					<img src="~/uploads/Writers/LeoTolstoy.jpeg" alt="Image" class="img-responsive" width="420" height="300">
 				</figure>
-				<div class="fh5co-text">
+				<div class="writer-text">
 					<h2>Leo Tolstoy</h2>
 					<p>Russian writer regarded as one of the greatest authors of all time. He received nominations for the Nobel Prize in Literature every year from 1902 to 1906</p>
 				</div>
