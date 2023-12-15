@@ -17,6 +17,11 @@
 
 
 <div class="row">
+    
+
+    </>
+    
+    
     <!-- Sidebar -->
     <div class="col-md-3 sidebar">
         <div class="sidebar-box">
@@ -60,7 +65,33 @@
                 Historical
             </label>
         </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input type-checkbox" type="checkbox" id="scientificCheckbox" data-type="Scientific">
+                <label class="form-check-label" for="scientificCheckbox">
+                    Scientific
+                </label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input type-checkbox" type="checkbox" id="geographyCheckbox" data-type="Geography">
+                <label class="form-check-label" for="geographyCheckbox">
+                    Geography
+                </label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input type-checkbox" type="checkbox" id="AutobiographyCheckbox" data-type="Autobiography">
+                <label class="form-check-label" for="AutobiographyCheckbox">
+                    Autobiography
+                </label>
+            </div>
+            <div class="form-check mb-2">
+                <input class="form-check-input type-checkbox" type="checkbox" id="DocumentationalCheckbox" data-type="Documentational">
+                <label class="form-check-label" for="DocumentationalCheckbox">
+                    Documentational
+                </label>
+            </div>
     </div>
+    
+        
     </div>
 
     <!-- Main Content -->
@@ -75,7 +106,6 @@
           
             <a asp-action="Details" asp-route-id="@item.Id" class="custombook" data-type="@item.Type">
                 <div class="m-2" style="display: inline-block;">
-                    <h6>@Html.DisplayFor(modelItem => item.Genre)</h6>
                     <figure>
                         @if (item.Type == "Novel")
                         {
@@ -93,15 +123,27 @@
                         {
                             <img src="uploads/historical.jpg" alt="Book Cover" height="200" width="150">
                         }
+                        else if (item.Type == "Scientific")
+                        {
+                            <img src="uploads/scientific.jpg" alt="Book Cover" height="200" width="150">
+                        }
+                        else if (item.Type == "Geography")
+                        {
+                            <img src="uploads/geography.jpg" alt="Book Cover" height="200" width="150">
+                        }
+                        else if (item.Type == "Autobiography")
+                        {
+                            <img src="uploads/autobiography.jpg" alt="Book Cover" height="200" width="150">
+                        }
+                        else if (item.Type == "Documentational")
+                        {
+                            <img src="uploads/documentational.jpg" alt="Book Cover" height="200" width="150">
+                        }
                     </figure>
                     <div>
-                        <h5><strong>@Html.DisplayFor(modelItem => item.Title)</strong></h5>
+                        <h6><strong>@Html.DisplayFor(modelItem => item.Title)</strong></h6>
                         <small>@Html.DisplayFor(modelItem => item.Author_Name)</small>
                         <h6>@Html.DisplayFor(modelItem => item.Price)$</h6>
-                        <h6>@Html.DisplayFor(modelItem => item.Rating)/10</h6>
-                       
-                    
-                        
                     </div>
                 </div>
             </a>
