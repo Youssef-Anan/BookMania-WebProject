@@ -221,10 +221,11 @@ footer {
 }
 
 .btn-Brown {
+    border-radius: 20px;
     background-color: #f3d2a1;
     border-color: #875c1a;
     color: #423726;
-    border-radius: 20px;
+
 }
 .btn-Brown:hover {
     background-color: #875c1a;
@@ -370,3 +371,24 @@ footer {
     border-radius: 20px;
     }
 }
+
+    .btn-Brown:hover {
+        border-radius: 20px;
+        background-color: #875c1a;
+        border-color: #875c1a;
+        color: white;
+        
+    }
+      .form-control {
+        border-radius: 20px;
+        border-color: brown;
+    }
+.form_gif {
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block; /* Ensures the image is treated as a block element */
+}
+   
+
